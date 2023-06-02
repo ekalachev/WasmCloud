@@ -1,0 +1,8 @@
+name = "my_actor"
+language = "rust"
+type = "actor"
+version = "0.1.0"
+
+[actor]
+claims = ["wasmcloud:httpserver"]
+#capabilities = ["wasmcloud:httpclient"]

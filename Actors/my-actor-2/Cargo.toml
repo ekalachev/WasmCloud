@@ -1,0 +1,27 @@
+[package]
+name = "my_actor2"
+version = "0.1.0"
+authors = [ "Eldar Kalachev" ]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "my_actor2"
+
+[dependencies]
+futures = "0.3"
+wasmbus-rpc = "0.13"
+wasmcloud-interface-httpserver = "0.10.0"
+wasmcloud-interface-httpclient = "0.9"
+url = "2.2"
+anyhow = "1.0.71"
+
+#wasmer = "3.3.0"
+#wasmer-wasix = "0.5.0"
+#wasmer-vm = "3.3.0"
+
+[profile.release]
+# Optimize for small code size
+lto = true
+opt-level = "s"
+strip = true

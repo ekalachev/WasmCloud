@@ -1,0 +1,14 @@
+[package]
+name = "wasm_hello_world"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+wasmer = "4.0.0-alpha.1"
+wasmer-wasix = "0.5.0"
+wasmer-vm = "3.3.0"
+url = "2.2"
+isahc = "1.7"
